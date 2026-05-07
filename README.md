@@ -2,14 +2,13 @@
 
 A carbon copy of the bazzite-deck-kde image, with the stock Bazzite
 kernel replaced by a custom-built kernel carrying AMD's official
-HDMI 2.1 FRL series from the amd-gfx mailing list, plus a one-line
-fix that lets the series actually run on DCN 3.0 silicon (Navi 21/22/23).
+HDMI 2.1 FRL V2 series from the amd-gfx mailing list.
 
 The kernel is built from my fork of agd5f/amd-staging-drm-next here:
-https://gitlab.freedesktop.org/dyllan500/linux/-/tree/harry-frl-v1
+https://gitlab.freedesktop.org/dyllan500/linux/-/tree/harry-frl-v2
 
 Upstream source of the FRL patches:
-https://lore.kernel.org/amd-gfx/20260501140441.41068-1-harry.wentland@amd.com/
+[https://lore.kernel.org/amd-gfx/20260501140441.41068-1-harry.wentland@amd.com/](https://lore.kernel.org/amd-gfx/20260507155147.182540-1-harry.wentland@amd.com/T/#t)
 
 ## What this image is *not*
 
