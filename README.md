@@ -4,16 +4,18 @@ A carbon copy of the bazzite-deck-kde image, with the stock Bazzite
 kernel replaced by a custom-built kernel carrying AMD's official
 HDMI 2.1 FRL V3 series from the amd-gfx mailing list.
 
-The kernel is built from my fork of agd5f/amd-staging-drm-next here:
-https://gitlab.freedesktop.org/dyllan500/linux/-/tree/harry-frl-v3
+This has VRR support but only tested on 9070 xt on a Sony Bravia 8 II.
 
+The kernel is built from my fork of agd5f/amd-staging-drm-next here:
+[https://gitlab.freedesktop.org/dyllan500/linux/-/tree/harry-frl-v3
+](https://gitlab.freedesktop.org/dyllan500/linux/-/tree/harry-frl-v3-hdmi-vrr)
 Upstream source of the FRL patches:
 https://lore.kernel.org/amd-gfx/20260508182808.520863-1-harry.wentland@amd.com/T/#t
+This fork contains my claude assisted patch for getting VRR support enabled.
 
 ## What this image is *not*
 
 - Not based on the older community FRL fork (`mkopec/linux:hdmi_frl`), images 20260421 and later contains that kernel
-- Does not have VRR support yet
 
 Once Harry's series merges to amd-staging-drm-next / drm-next, this image becomes obsolete and you should rebase
 onto a stock Bazzite kernel that includes it.
